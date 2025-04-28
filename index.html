@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- <div id="loading-screen">
+    <div class="stick stick1"></div>
+    <div class="stick stick2"></div>
+    <div class="glow-circle"></div>
+    <p class="loading-text">Loading Port<span>folio...</span></p>
+  </div> -->
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">
+          <p>Port<span>folio</span></p>
+        </a>
+      </div>
+
+      <div class="nav-list">
+        <a href="#home" class="scroll-navs scroll-active"><span class="myText">Home</span></a>
+        <a href="#services" class="scroll-navs"><span class="myText">Skills</span></a>
+        <a href="#education" class="scroll-navs"><span class="myText">Education</span></a>
+        <a href="#projects" class="scroll-navs"><span class="myText">Projects</span></a>
+        <button id="theme-toggle" class="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      <div class="menu">
+        <div id="menuBar1" class="menu-bar"></div>
+        <div id="menuBar2" class="menu-bar"></div>
+        <div id="menuBar3" class="menu-bar"></div>
+      </div>
+
+
+    </nav>
+  </header>
+
+  <main>
+    <div id="scrollProgressContainer">
+      <div id="scrollProgressBar"></div>
+    </div>
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <section id="home">
+      <div class="home-content">
+        <h3>Hi, My name is</h3>
+        <h1>Giorgi <span>Khvtisavrishvili</span></h1>
+        <h3>And I'm a <span class="special" id="typewriter">Frontend Developer</span></h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Xvtiso14" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/giorgi_khvtisavrishvili/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/MrXvtiso" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/giorgi-khvtisavrishvili-4a303b339/" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="buttons">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khvtisavrishviligiorgi@gmail.com"
+            target="_blank"><button class="contact">Contact Me</button></a>
+
+        </div>
+      </div>
+      <div class="home-about">
+        <h2>About Me</h2>
+        <div class="home-img">
+          <img src="images/FBPF.jpg" alt="PFP">
+        </div>
+        <div class="home-about-info">
+          <p><span>Full Name:</span> Giorgi Khvtisavrishvili</p>
+          <p><span>Age:</span> 16 Years old</p>
+          <p><span>Country/City:</span> Georgia, Tbilisi</p>
+          <p><span>Phone Number:</span> <a href="tel:+995511212910">+995-511-21-29-10</a></p>
+          <p><span>E-mail:</span> <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=khvtisavrishviligiorgi@gmail.com"
+              target="_blank">khvtisavrishviligiorgi@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" data-aos="fade-up">
+      <h2 class="title">Skills</h2>
+      <div class="services-content" data-aos="fade-up">
+        <div class="service-box">
+          <h3>Frontend Development</h3>
+          <p>I create responsive, user-friendly websites and web applications using HTML, CSS, JavaScript. I
+            build clean, interactive interfaces and ensure everything runs smoothly across devices and
+            browsers. I focus on performance, accessibility, and turning design concepts into fully
+            functional digital experiences.</p>
+        </div>
+        <div class="service-box">
+          <h3>Graphic Design</h3>
+          <p>I create bold, engaging visuals using Adobe Illustrator and Photoshop. I design
+            logos, brand elements, social media graphics, posters, and other digital assets that stand out.
+            My focus is on clean, effective design that communicates clearly and aligns with the overall
+            visual identity of a project or brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" data-aos="fade-up">
+      <h2 class="title">Education</h2>
+      <div class="education-content" data-aos="fade-up">
+        <div class="education-box">
+          <h3>Business and Technology Academy</h3>
+          <p>College Student (2023 - Present)</p>
+          <p>Currently studying web development with a focus on HTML, CSS, and JavaScript. Gaining practical
+            experience through hands-on projects and personal exploration.</p>
+        </div>
+        <div class="education-box">
+          <h3>Self-Taught Learning</h3>
+          <p>Ongoing</p>
+          <p>Continuously learning through online platforms like YouTube and developer communities, improving
+            my skills beyond the classroom.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="projects-content">
+        <div class="project-card">
+          <h3>DINO Game</h3>
+          <p>A simple Chrome Dino game clone built with HTML, CSS, and JavaScript.</p>
+          <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+          <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+        </div>
+        <div class="project-card">
+          <h3>Interactive Elevator Model</h3>
+          <p>Simulates a 5-floor elevator with queue logic, working doors, and movement restrictions.</p>
+          <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+          <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+        </div>
+        <div class="project-card">
+          <h3>Water Cup Animation</h3>
+          <p>Creative CSS & JS animation simulating a water-filled cup with interactive effects.</p>
+          <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+          <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+        </div>
+      </div>
+    </section> -->
+    <section id="projects" data-aos="fade-up">
+      <h2 class="title">Projects</h2>
+      <div class="projects-content" data-aos="fade-up">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Chrome Dino Game Clone</h3>
+            </div>
+            <div class="card-back">
+              <p>A simple Chrome Dino game clone built with HTML, CSS, and JavaScript.</p>
+              <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+              <div class="project-buttons">
+                <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+                <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Interactive Elevator Model</h3>
+            </div>
+            <div class="card-back">
+              <p>Simulates a 5-floor elevator with queue logic, working doors, and movement restrictions.</p>
+              <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+              <div class="project-buttons">
+                <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+                <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Water Cup Animation</h3>
+            </div>
+            <div class="card-back">
+              <p>Creative CSS & JS animation simulating a water-filled cup with interactive effects.</p>
+              <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+              <div class="project-buttons">
+                <a href="#" target="_blank"><button class="project-btn">Live Demo</button></a>
+                <a href="https://github.com/MrXvtiso" target="_blank"><button class="project-btn">GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content" data-aos="fade-in">
+      <div class="footer-social-icons">
+        <a href="https://www.facebook.com/Xvtiso14" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/giorgi_khvtisavrishvili/" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/MrXvtiso" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/giorgi-khvtisavrishvili-4a303b339/" target="_blank"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p class="copyright"><i class="fa-regular fa-copyright"></i> 2024 Giorgi Khvtisavrishvili | All rights
+        reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500, // animation duration
+      delay: 100,
+      once: true,      // animate only once
+      easing: 'ease-in-out',
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
